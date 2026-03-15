@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background: #fafafa; }
+
+/* НАВИГАЦИЯ */
+nav { 
+    display: flex; justify-content: space-between; align-items: center; 
+    background: #111; padding: 15px 8%; position: sticky; top: 0; z-index: 1000; 
+}
+nav .logo { color: #00d2ff; font-size: 1.6rem; font-weight: 900; letter-spacing: 2px; }
+nav .menu a { color: white; text-decoration: none; margin-left: 25px; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; transition: 0.3s; }
+nav .menu a:hover { color: #00d2ff; }
+
+/* ШАПКИ С ФОНОМ */
+header { height: 450px; background-size: cover; background-position: center; color: white; }
+
+.hero-home { background-image: url('https://burst.shopifycdn.com/photos/clouds-from-aircraft-window.jpg?exif=0&iptc=0'); }
+.hero-dest { background-image: url('https://rosphoto.com/resources/images/postfoto1676/ori/bailey-17.jpg'); }
+.hero-contact { background-image: url('https://thetouragency.com/assets/images/image-tta-bg.jpg'); }
+
+.overlay { background: rgba(0,0,0,0.5); width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.overlay h1 { font-size: 3.5rem; margin: 0; text-transform: uppercase; }
+
+/* КОНТЕНТ */
+main { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+
+/* КАРТОЧКИ ТУРОВ */
+.tour-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+.tour-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: 0.3s; }
+.tour-card:hover { transform: translateY(-10px); }
+.tour-card img { width: 100%; height: 240px; object-fit: cover; }
+.tour-info { padding: 25px; }
+.tour-link { display: inline-block; padding: 10px 20px; border: 2px solid #00d2ff; color: #00d2ff; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; }
+.tour-link:hover { background: #00d2ff; color: white; }
+
+/* СЕКЦИЯ ПОЧЕМУ МЫ */
+.feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
+.feature-item img { width: 100%; height: 300px; object-fit: cover; border-radius: 15px; }
+.feature-item h3 { color: #222; font-size: 1.5rem; }
+
+/* ФОРМА */
+.contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 5px 30px rgba(0,0,0,0.05); }
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.contact-form input, .contact-form textarea { padding: 15px; border: 1px solid #eee; background: #f9f9f9; border-radius: 8px; font-size: 1rem; }
+
+/* КНОПКИ */
+.btn-main { background: #00d2ff; color: white; padding: 14px 35px; border: none; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; transition: 0.3s; }
+.btn-main:hover { background: #0099cc; box-shadow: 0 5px 15px rgba(0,210,255,0.4); }
+
+.agency-links { margin-top: 30px; }
+.card-link { display: inline-block; background: #222; color: white; padding: 12px 25px; text-decoration: none; margin: 5px; border-radius: 8px; font-size: 0.9rem; }
+
+footer { background: #111; color: #555; text-align: center; padding: 40px 0; margin-top: 80px; }
